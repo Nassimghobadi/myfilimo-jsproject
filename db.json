@@ -1,0 +1,164 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "جستجو",
+      "link": "https://google.com",
+      "src": "./public/images/svgexport-1.jpg",
+      "alt": "image-1",
+      "dropdown": []
+    },
+    {
+      "id": 2,
+      "name": "فیلیمومدرسه",
+      "link": "https://torob.com",
+      "src": "./public/images/svgexport-5.jpg",
+      "alt": "image-2",
+      "dropdown": []
+    },
+    {
+      "id": 3,
+      "name": "فیلیموتور",
+      "src": "./public/images/svgexport-4.jpg",
+      "alt": "image-3",
+      "link": "https://digikala.com",
+      "dropdown": []
+    },
+    
+    {
+      "id": 4,
+      "name": " فیلیمو",
+      "src": "./public/images/logofilimo.jpg",
+      "alt": "image-4",
+      "link": "https://aparat.com",
+      "dropdown": []
+    }
+  ],
+
+  "favorites": [
+    {
+      "id": 1,
+      "category": "سریال",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149708_186389.jpg?width=165&quality=85&secret=vIdKR3lExuAGCjeU2_dIYg",
+     "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 2,
+      "category": "سریال",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149906_186741.jpg?width=165&quality=85&secret=3niIaP4us4UdBolnEscV_Q",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 3,
+      "category": "سریال",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_134994_187092.jpg?width=165&quality=85&secret=Avcsjj18zQpfjhUZDkLz6A",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 4,
+      "category": "سریال",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149880_186624.jpg?width=165&quality=85&secret=3D38OJwxxTGgf3fgRAdjEg",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 5,
+      "category": "فیلم",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149704_186355.jpg?width=165&quality=85&secret=8cewuCc98R6hGyBoej8TTA",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 6,
+      "category": "فیلم",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149702_186326.jpg?width=165&quality=85&secret=SvtpxqbBfWxNkJpYq5s59w",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 7,
+      "category": "فیلم",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_148573_183474.jpg?width=165&quality=85&secret=cFeTI3rkLfBXm4mCDumRrQ",
+     "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 8,
+      "category": "فیلم",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149701_186273.jpg?width=165&quality=85&secret=1PpaX3bVjN_P4ir4CIngzA",
+     "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    },
+    {
+      "id": 9,
+      "category": "فیلم",
+      "image": "https://static.cdn.asset.filimo.com/flmt/mov_149583_186324.jpg?width=165&quality=85&secret=YhoJkrJw6rWQ4sah6ISf-w",
+      "ekhtesasi": "اختصاصی ","filimo":"فیلیمو"
+    }
+  ],
+  "movie-detail": [
+    {
+      "title": "زخم کاری: انتقام",
+      "subtile": "کارگردان: محمدحسین مهدویان",
+
+      "description": "مالک آخرین برگ بازیش را رو می کند. او فاتحانه نشسته بر سریر خون، پا در مسیری می گذارد که هنوز بوی خون از آن به مشام می رسد.",
+      "image": "https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/deviceYaghi.png"
+    }
+  ],
+  "device": [
+    {
+      "image": "https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/deviceYaghi.png",
+      "title": "تماشای فیلیمو با همه دستگاه‌ها",
+      "subtitle": "می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید."
+    }
+  ],
+  "TV": [
+    {
+      "image2": "https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/TVBG.png",
+      "title": "چطور با تلویزیون، فیلیمو تماشا کنم؟",
+      "description": "ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را فراهم کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید از لینک زیر، آن‌ها را تماشا کنید و روشی که با تلویزیون شما سازگار است را انتخاب کنید."
+    }
+  ],
+  "kids": [
+    {
+      "image3": "https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/bg-kids.png",
+      "title": "دنیایی متنوع از فیلم و کارتون‌های کودکانه",
+      "description": "ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک فضای امن برای تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال‌ها دسترسی نداشته‌باشد.",
+      "button1": "فیلیمو کودک بساز",
+      "button2": "تماشای فیلیمو کودک"
+    }
+  ],
+  "OnlineCinema": [
+    {
+      "bgImg": "https://www.filimo.com/assets/web/ui/img-EO6bydFk6Yq4pMaEiCWiw/campaigns/nosub-v_new/bg-cinama.png",
+      "bgTitle": "سینما آنلاین فیلیمو",
+      "innerImg": "https://static.cdn.asset.filimo.com/flmt/mov_149117_185998.jpg?width=165&quality=85&secret=EKpEBb1lWKtr6l-oCH2-Og"
+    }
+  ],
+  "FAQ": [
+    {
+      "id": 1,
+      "subject": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "svg": "",
+      "question": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "answer": "بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق  اپلیکیشن را تماشا کنید."
+    },
+    {
+      "id": 2,
+      "subject": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "svg": "",
+      "question": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "answer": "بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق  اپلیکیشن را تماشا کنید."
+    },
+    {
+      "id": 3,
+      "subject": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "svg": "",
+      "question": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "answer": "بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق  اپلیکیشن را تماشا کنید."
+    },
+    {
+      "id": 4,
+      "subject": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "svg": "",
+      "question": "آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟",
+      "answer": "بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق  اپلیکیشن را تماشا کنید."
+    }
+  ],
+  "subscription":[{"title":"فیلیمو", "feature1":"هزاران فیلم و سریال خارجی (دوبله و زیرنویس)","feature2":"هزاران انیمیشن و کارتون برای کودکان","feature3":"پشتیبانی 24 ساعته برای راهنمایی شما", "button":"خرید اشتراک و تماشا"}]
+}

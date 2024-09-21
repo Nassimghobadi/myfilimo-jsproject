@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  background-color: black;
+}
+
+/* end fonts */
+
+.wrapper {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General Menu Styling */
+
+.menu {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px; /* Reduced padding */
+  background-color: #0b0b0b;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; /* Distribute items to sides */
+  align-items: center;
+  gap: 10px;
+  margin-bottom: auto;
+  direction: rtl;
+}
+
+/* Specific Link Styling */
+.menu nav div:nth-child(4) a {
+  font-size: 24px;
+  &:hover {
+    color: whitesmoke;
+  }
+}
+.menu nav div:nth-child(4):not(:last-child) a::after {
+  content: "|";
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: medium;
+}
+
+.menuHorizental {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.menuVertical {
+  display: flex;
+  flex-direction: row; /* Vertical layout */
+  align-items: center; /* Adjust as needed */
+  justify-content: center;
+  div:nth-child(4) {
+    overflow: hidden;
+    font-size: xx-large;
+  }
+
+  div:nth-child(1) {
+    background-color: red;
+    display: none;
+  }
+
+  div:nth-child(2) {
+    background-color: red;
+    display: none;
+  }
+  div:nth-child(3) {
+    background-color: red;
+    display: none;
+  }
+  .menuHorizental,
+  button {
+    display: block;
+  }
+}
+
+/* Align header and tabs next to each other */
+.favorites-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Paragraph header styling */
+.paragraph-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  direction: rtl; /* Align text to the right for Persian language */
+}
+
+/* Tabs section */
+.tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* Tab button styling */
+.tabs button {
+  background-color: transparent; /* Default background for unselected tabs */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on tab buttons */
+.tabs button:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+/* Active state (when tab is selected) */
+.tabs button.active {
+  background-color: #ff5722; /* Orange background for active tab */
+  color: white; /* White text on active tab */
+}
+
+/* Inactive state (when tab is not selected) */
+.tabs button.inactive {
+  background-color: transparent; /* Black background for inactive tab */
+  color: #ccc; /* Lighter text color for inactive tab */
+}
+
+/* Favorites grid styling */
+.favorites {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  direction: rtl; /* Right-to-left layout for Persian */
+  padding: 20px;
+  background-color: transparent; /* Dark background */
+}
+
+/* Individual favorite item styling */
+.favorite {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* Image within favorite item */
+.favorite img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.5s ease; /* Smooth transition on hover */
+}
+
+/* Image hover effect */
+.favorite img:hover {
+  opacity: 1;
+}
+
+/* Favorite item description */
+.favorite div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: white;
+  text-align: center;
+}
+
+/* Ensure proper hover and image behavior */
+.favorite img {
+  opacity: 0.8; /* Reduced opacity initially */
+}
+
+.favorite img:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Hover effect on the entire favorite item */
+.favorite:hover {
+  border: 1px solid white;
+  transition: all linear 800ms;
+  border-radius: 10px;
+}
+/* Slider Joker */
+.joker-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.joker {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../images/joker.jpg) no-repeat center/cover;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.backgroundjoker-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 5;
+  color: whitesmoke;
+}
+
+.slidesJoker {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex; /* Display flex to align slides horizontally */
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.slideJoker {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.slideJoker .img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  filter: blur(4px); /* Slight blur for locked effect */
+  transition: filter 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.slideJoker:hover img {
+  filter: blur(0); /* Remove blur on hover */
+}
+
+/* Lock icon in the middle of the locked image */
+.lockIcon {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  z-index: 90;
+  border-radius: 50%;
+}
+
+.lockIcon img {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  padding: 4px;
+}
+
+/* Next and Previous buttons */
+.nextJoker,
+.prevJoker {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  position: absolute; /* Position the buttons absolutely */
+  top: 60%; /* Vertically center the buttons */
+  transform: translateY(-50%); /* Adjust for centering */
+}
+
+.nextJoker {
+  right: 20px; /* Position the next button on the right of the slides */
+}
+
+.prevJoker {
+  left: 20px; /* Position the previous button on the left of the slides */
+}
+
+.nextJoker:disabled,
+.prevJoker:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Pagination bullets */
+.paginationJoker {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  display: none;
+}
+
+.bulletJoker {
+  width: 10px;
+  height: 10px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.activeBullet {
+  background-color: crimson !important;
+}
+
+/* General Text Styling */
+.text-right {
+  color: whitesmoke;
+}
+
+.summary-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+/* end slider joker */
+/* devices */
+.devices {
+  color: whitesmoke;
+  direction: rtl;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-flow: row nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Creates the dark shadow behind the text */
+  opacity: 0.9;
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.device-titles {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Creates the dark shadow behind the text */
+}
+.device {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Creates the dark shadow behind the text */
+}
+/* end devices */
+/* tv */
+.telvesions {
+  direction: rtl;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Creates the dark shadow behind the text */
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+/* end tv */
+/* /kids */
+.kids {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  direction: rtl;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, black, #333333, #bfbfbf27);
+}
+.OnlineCinema {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative; /* add this */
+  width: 100%;
+  height: 100%; /* or a specific height value */
+  padding: 40px;
+  .container {
+    direction: rtl;
+    background: rgba(90, 53, 53, 0.4);
+    padding: 40px;
+    width: 40%;
+    align-items: start;
+    margin: 50px auto;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 10px;
+    fill: #fff;
+    opacity: 1;
+  }
+}
+/* online cinema */
+.OnlineCinema::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-1.jpg) no-repeat center center;
+  background-size: cover;
+  filter: brightness(0.2); /* apply the filter here */
+}
+
+/* slider comment */
+
+.Comment-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #3d383800;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.backgroundComment-content {
+  background-color: transparent;
+  text-align: right;
+  color: whitesmoke;
+  /* padding: 20px; */
+  position: relative;
+  /* z-index: 1; */
+  h2 {
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+
+.Comment {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slidesComments {
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Maintain full width */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  gap: 2px; /* Add a gap between slides */
+
+  /* background: deeppink;
+  margin: 0 auto; */
+}
+
+.slideComment {
+  background-color: #7c78781a;
+  position: relative;
+  width: 100%; /* Set width to 33.33% so 3 slides fit on screen */
+  height: 200px;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  filter: blur(0.2px); /* Initial blur */
+  opacity: 0.8;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid whitesmoke;
+
+  .description {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 10px;
+    text-align: right;
+    margin: unset;
+  }
+}
+
+.top {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  gap: 4px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.left {
+  width: 30px;
+  height: 30px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.nextComment,
+.prevComment {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(179, 168, 168);
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  color: whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10; /* Reduced z-index to avoid overlap issues */
+}
+
+.nextComment {
+  right: 93%;
+}
+
+.prevComment {
+  left: 20px;
+}
+
+.nextComment:disabled,
+.prevComment:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.paginationComment {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10; /* Reduced z-index to avoid overlap issues */
+}
+
+.bulletComment {
+  width: 10px;
+  height: 10px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.activeBullet {
+  background-color: crimson !important;
+}
+/* FAQ */
+.faqs {
+  background-color: #0b0b0b;
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  direction: rtl;
+  position: relative;
+  margin-top: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  .faq {
+    width: 80%;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .faq,
+  .subjects,
+  .question,
+  .answer {
+    background-color: #2b2b2b;
+  }
+}
+.hidden {
+  display: none;
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeDown {
+  animation-name: fadeDown;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.fadeUp {
+  animation-name: fadeUp;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  display: block; /* Keep block display while animating */
+}
+.icon {
+  font-size: 20px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.faq .toggle-answer .icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: orangered;
+}
+
+.bi-x-lg {
+  /* Style the SVG close icon */
+  fill: orangered; /* Change color to whatever you prefer */
+  width: 24px;
+  height: 24px;
+}
+.subscription {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  color: rgba(245, 245, 245, 0.795);
+}
+.footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-size: xx-small;
+
+}

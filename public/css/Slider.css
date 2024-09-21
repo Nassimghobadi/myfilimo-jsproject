@@ -1,0 +1,95 @@
+.slider {
+  direction: rtl;
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slides {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+.slide {
+  width: inherit;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Start with invisible slides */
+  visibility: hidden; /* Hide slides initially */
+  transition: opacity 0.8s ease, visibility 0.2s ease; /* Fade transition */
+  
+}
+
+.slide.active {
+  opacity: 1; /* Active slide becomes visible */
+  visibility: visible; /* Ensure the active slide is visible */
+}
+
+.slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.next, .prev {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: none;
+}
+
+.next {
+  left: 50px;
+}
+
+.prev {
+  right: 50px;
+}
+
+.next:disabled, .prev:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.activeBullet {
+  background-color: crimson !important;
+}
+
+.dark-overlay {
+  background: linear-gradient(to top, rgba(8, 8, 8, 1) 40%, rgba(10, 10, 10, 0) 100%);
+}
+.pagination,
+.next,
+.prev {
+  z-index: 2;
+}
